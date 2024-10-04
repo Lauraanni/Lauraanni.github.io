@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "sans-serif";
+  }
+  
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  :root {
+    --bg-color: #dcc1f1;
+    --second-bg-color: #ffffff;
+    --text-color: white;
+    --main-color: #976eb8;
+  }
+  
+  html {
+    font-size: 60%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    color: #976eb8;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  span {
+    background: linear-gradient(270deg,
+        #976eb8 10%,
+        #ebaeee 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .navbar a {
+    font-family: "Bebas Neue";
+    letter-spacing: 0.1rem;
+    font-size: 2.4rem;
+    color: #976eb8;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+  
+  .gradient-btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(270deg,
+        #976eb8 10%,
+        #ebaeee 100%);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+  }
+  
+  .gradient-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 10rem 15%;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    flex-direction: row-reverse;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .home-content h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+  }
+  
+  .home-content h3 {
+    margin: 1rem 0;
+    font-size: 4rem;
+  }
+  
+  .home-content p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  .home-img img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+  }
+  
+  .home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+      0 0 50px var(--main-color),
+      0 0 100px var(--main-color);
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .gallery {
+    background-color: #ffffff;
+  }
+  
+  .gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.9);
+  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+  }
+  
+  
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  
+  .btn {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(270deg,
+        #976eb8 10%,
+        #ebaeee 100%);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+  
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .header {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  
+  .tech-item p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  
+  .skills {
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tech-item img,
+  .tech-item i {
+    width: 100px;
+    height: 100px;
+  
+  }
+  
+  .tech-item img {
+    object-fit: contain;
+  }
+  
+  .tech-item i {
+    font-size: 100px;
+  }
+  
+  .tech-item img:hover,
+  .tech-item i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;/
+  }
+  
+  .tech-item:hover p {
+    font-size: 1.6rem;
+  }
+  
+  .skills-description {
+    background-color: #ca99ef;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    width: 60%;
+  }
+  
+  .skills-description p {
+    font-size: 2.6rem;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .skills h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+  
+  }
+  
+  .gallery p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+  
+  
+  }
+  
+  .gallery h2 {
+    color: #976eb8;
+    font-size: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  .tech-container {
+    width: 35%;
+    border-radius: 8px;
+  }
+  
+  .tech-container h2 {
+    color: #976eb8;
+    font-size: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+  
+    .home-content h1 {
+      font-size: 4.5rem;
+    }
+  
+    .home-content p {
+      font-size: 1.2rem;
+    }
+  
+    .home-img {
+      display: none;
+    }
+  }
