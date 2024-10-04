@@ -375,4 +375,10 @@
     .skills-description{
       width: 100%;
     }
+    .gallery img {
+      max-width: 100%; 
+      height: auto; 
+      pointer-events: none; 
+    }
+  
   }
