@@ -619,25 +619,20 @@ button[data-close-modal] {
       height: 2rem;
       background-color: var(--bg-color);
       border-radius: 1.5rem;
-      position: relative; 
+
     }
     .slider:before {
       height: 1.5rem;
       width: 1.5rem;
-      left: 0.2rem;
+      left: 0rem;
       bottom: 0.3rem;
       background-color: var(--main-color);
       transition: 0.4s;
       border-radius: 50%;
       position: absolute; 
     }
-    .switch.checked .slider:before {
-      right: 0.2rem;
-      transform: none;
-    }
     .navbar a {
       font-size: 1rem;
-      
   
       }
     }
