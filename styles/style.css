@@ -591,8 +591,7 @@ button[data-close-modal] {
     transition: 0.4s;
     border-radius: 50%;
   }
-  
-
+ 
 
   @media (max-width: 480px) {
     .home-content h1 {
@@ -629,9 +628,16 @@ button[data-close-modal] {
       transition: 0.4s;
       border-radius: 50%;
     }
+    .navbar a {
+      padding-left: 0%;
+      font-size: 1.2rem;
+  
+      }
+    }
+    }
     
 
-  }
+
 
 
 }
