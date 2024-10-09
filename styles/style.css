@@ -590,6 +590,7 @@ button[data-close-modal] {
     background-color: var(--main-color);
     transition: 0.4s;
     border-radius: 50%;
+    position: absolute; 
   }
  
 
@@ -618,6 +619,7 @@ button[data-close-modal] {
       height: 2rem;
       background-color: var(--bg-color);
       border-radius: 1.5rem;
+      position: relative; 
     }
     .slider:before {
       height: 1.5rem;
@@ -627,10 +629,12 @@ button[data-close-modal] {
       background-color: var(--main-color);
       transition: 0.4s;
       border-radius: 50%;
+      position: absolute; 
     }
     .navbar a {
       padding-left: 0%;
       font-size: 1.2rem;
+      margin-left: 1rem;
   
       }
     }
