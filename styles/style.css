@@ -527,21 +527,7 @@ button[data-close-modal] {
     text-align: left;
   }
 
-  .switch {
-    width: 4rem;
-    height: 2rem;
-    background-color: var(--bg-color);
-    border-radius: 1.5rem;
-  }
-  .slider:before {
-    height: 1.5rem;
-    width: 1.5rem;
-    left: -0.2rem;
-    bottom: 0.3rem;
-    background-color: var(--main-color);
-    transition: 0.4s;
-    border-radius: 50%;
-  }
+
   .projectimg {
     width: 100%;
     max-width: 90%;
@@ -608,6 +594,22 @@ button[data-close-modal] {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       opacity: 0.9;
 
+    }
+
+    .switch {
+      width: 4rem;
+      height: 2rem;
+      background-color: var(--bg-color);
+      border-radius: 1.5rem;
+    }
+    .slider:before {
+      height: 1.5rem;
+      width: 1.5rem;
+      left: -0.1rem;
+      bottom: 0.3rem;
+      background-color: var(--main-color);
+      transition: 0.4s;
+      border-radius: 50%;
     }
    
   }
