@@ -500,7 +500,7 @@ button[data-close-modal] {
   }
 
   .navbar a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .tech-container {
@@ -575,6 +575,24 @@ button[data-close-modal] {
     color: white;
   }
 
+  
+  .switch {
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 1.5rem;
+  }
+  .slider:before {
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0rem;
+    bottom: 0.3rem;
+    background-color: var(--main-color);
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+
 
   @media (max-width: 480px) {
     .home-content h1 {
@@ -597,7 +615,7 @@ button[data-close-modal] {
     }
 
     .switch {
-      width: 4rem;
+      width: 3rem;
       height: 2rem;
       background-color: var(--bg-color);
       border-radius: 1.5rem;
@@ -605,15 +623,14 @@ button[data-close-modal] {
     .slider:before {
       height: 1.5rem;
       width: 1.5rem;
-      left: 0.3rem;
+      left: 0rem;
       bottom: 0.3rem;
       background-color: var(--main-color);
       transition: 0.4s;
       border-radius: 50%;
     }
-    .navbar a {
-      font-size: 1.2rem;
-    }
+    
+
   }
 
 
