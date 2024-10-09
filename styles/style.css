@@ -624,16 +624,18 @@ button[data-close-modal] {
     .slider:before {
       height: 1.5rem;
       width: 1.5rem;
-      left: -0.2rem;
+      left: 0.3rem;
       bottom: 0.3rem;
       background-color: var(--main-color);
       transition: 0.4s;
       border-radius: 50%;
       position: absolute; 
     }
+    .switch.checked .slider:before {
+      transform: translateX(1rem);
+    }
     .navbar a {
-      margin-right: 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       
   
       }
