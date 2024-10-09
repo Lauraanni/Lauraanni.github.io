@@ -21,6 +21,10 @@
       <a href="#projects">Projects</a>
       <a href="#gallery">Outside of Work</a>
     </nav>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleMode()">
+      <span class="slider"></span>
+    </label>
   </header>
 
   <section class="home" id="home">
@@ -48,18 +52,23 @@
       <h2>About me</h2>
       <p>I am a final-year student of information technology with a strong focus on programming, software testing,
         artificial intelligence and cybersecurity.
-        <div style="height: 2rem; display: block;"></div>
-        <p> Throughout my studies, I have developed a
+      <div style="height: 2rem; display: block;"></div>
+      <p> Throughout my studies, I have developed a
         solid foundation in various technologies, including JavaScript, HTML, CSS, React, React Native and WordPress.
-        Among these, I have particularly enjoyed working with React, React Native and JavaScript, as they allow for dynamic and
+        Among these, I have particularly enjoyed working with React, React Native and JavaScript, as they allow for
+        dynamic and
         interactive web development.
-        What fascinates me about programming is the limitless possibilities it offers; the ability to create anything I can imagine and seeing the results of my work is incredibly rewarding.</p>
-        <div style="height: 2rem; display: block;"></div>
-        <p>My background in the finance industry has helped me develop valuable analytical and problem-solving skills. I consider myself a determined problem solver, consistently ready to face challenges and seek out effective solutions.
+        What fascinates me about programming is the limitless possibilities it offers; the ability to create anything I
+        can imagine and seeing the results of my work is incredibly rewarding.</p>
+      <div style="height: 2rem; display: block;"></div>
+      <p>My background in the finance industry has helped me develop valuable analytical and problem-solving skills. I
+        consider myself a determined problem solver, consistently ready to face challenges and seek out effective
+        solutions.
         However, my true passion lies in the IT field, and I am eager to
-        transition into a career where I can fully express my creativity, problem-solving skills and technical expertise. </p>
-        <div style="height: 2rem; display: block;"></div>
-        <p>I am excited to embrace new challenges, continuously learn and grow within this dynamic
+        transition into a career where I can fully express my creativity, problem-solving skills and technical
+        expertise. </p>
+      <div style="height: 2rem; display: block;"></div>
+      <p>I am excited to embrace new challenges, continuously learn and grow within this dynamic
         industry. I look forward to making my mark in the IT world and pursuing my dreams.</p>
     </div>
 
@@ -110,21 +119,48 @@
     </div>
   </section>
 
+  <section class="projects" id="projects">
+    <h2 class="projectsTitle">Projects</h2>
 
-  <section class="projects" id="projects"></section>
-  <h2 class="projectsTitle">Here are some of my projects</h2>
-  <div class="projectdiv">
-    <button data-open-modal data-modal-video="images/react_nodejs_planthouse.mp4"
-      style="border: none; background-color: #ffffff ">
-      <img class="projectimg" src="images/reactproject.png" alt="React Project" />
-    </button>
-    <button data-open-modal data-modal-video="images/wordpress.mp4" style="border: none; background-color: #ffffff ">
-      <img class="projectimg" src="images/wordpressproject.png" alt="WordPress Project" />
-    </button>
-    <button data-open-modal data-modal-video="images/workoutapp.mp4" style="border:none; background-color: #ffffff ">
-      <img class="projectimg" src="images/workoutapp.png" alt="React Native Project" />
-    </button>
-  </div>
+
+    <div class="projectdiv">
+      <h3 class="projectInfo">Here are some of my projects. Click on the images to watch the videos.</h3>
+      <button data-open-modal data-modal-video="images/react_nodejs_planthouse.mp4"
+        style="border: none; background-color: #ffffff">
+        <img class="projectimg" src="images/planthousereact.png" alt="React Project" />
+      </button>
+      <p>In this project, I collaborated with two classmates to create a fictional online store selling houseplants.
+        The site was developed using React and Node.js, and I learned a lot about new techniques, database management, backend development and project management.
+        Although we worked on the project together throughout, my specific responsibilities included
+        coding the structure of the site and managing database calls to fetch data from the backend.</p>
+    </div>
+
+    <div class="projectdiv">
+      <button data-open-modal data-modal-video="images/wordpress.mp4" style="border: none; background-color: #ffffff">
+        <img class="projectimg" src="images/planthousewordpress.png" alt="WordPress Project" />
+      </button>
+      <p>In this project, we continued with the houseplant theme. 
+        This time, we built the online store using WordPress. 
+        While the website design and implementation were done together, 
+        my responsibilities included defining styles with CSS, 
+        designing the header image and banner images for the image slider, 
+        and implementing the login feature.
+        Throughout the project, I learned a lot, especially about WordPress, its plugins, and UX design.
+      </p>
+    </div>
+
+    <div class="projectdiv">
+      <button data-open-modal data-modal-video="images/workoutapp.mp4" style="border: none; background-color: #ffffff">
+        <img class="projectimg" src="images/workoutapp.png" alt="React Native Project" />
+      </button>
+      <p>This is one of my most recent projects, where I created this application
+        for recording workout activities. This project was built using React Native,
+        and through this project, I gained valuable experience in using React Native components,
+        managing state effectively, and integrating features like navigation and context for sharing data
+        across different screens. </p>
+    </div>
+
+  </section>
 
   <dialog data-modal style="margin: 5% auto; width: 80%; max-width: 900px; overflow: hidden;">
     <div class="modal-content">
@@ -136,14 +172,14 @@
   </dialog>
 
 
-
   <section class="gallery" id="gallery">
     <div class="container">
       <h2 class="galleryTitle">About Me Outside the Office</h2>
 
-      <p> In my free time, I spend a lot of time outdoors with my dogs. 
-        I also have a passion for photography and I'm always capturing beautiful moments. 
-        Being a little introverted person, I enjoy staying at home playing video games and reading books. I also like to go to the gym to stay active.
+      <p>In my free time, I enjoy spending a lot of time outdoors with my dogs. 
+        I also have a passion for photography, and I'm always capturing beautiful moments (usually of my dogs). 
+        At home, I like to relax by playing video games and reading books. 
+        However, staying active is important to me, so I make sure to go to the gym regularly.
       </p>
     </div>
     <div class="gallery">
@@ -179,6 +215,11 @@
       modal.close();
       modalVideo.src = "";
     });
+
+    function toggleMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
   </script>
 </body>
 
