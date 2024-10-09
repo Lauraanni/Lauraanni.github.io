@@ -624,7 +624,7 @@ button[data-close-modal] {
     .slider:before {
       height: 1.5rem;
       width: 1.5rem;
-      left: 0rem;
+      left: -0.2rem;
       bottom: 0.3rem;
       background-color: var(--main-color);
       transition: 0.4s;
